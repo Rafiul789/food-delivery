@@ -17,9 +17,9 @@ function App() {
         <Route
           path="/:id"
           element={
-            <PrivateRoute>
+          <PrivateRoute>
               <FoodById />
-            </PrivateRoute>
+           </PrivateRoute>
           }
         />
         <Route path="/login" element={<Login />} />
