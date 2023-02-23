@@ -90,7 +90,7 @@ const FoodById = () => {
 							className="btn btn-primary"
 							onClick={() => addToFood(service)}
 						>
-							add to card
+							add to cart
 						</button>
 					</div>
 				</div>

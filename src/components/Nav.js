@@ -36,9 +36,16 @@ const Nav = () => {
             </li>
           </ul>
           {user?.email ? (
-            <button className="btn btn-danger" onClick={() => signOut(auth)}>
-              Sign Out
-            </button>
+           <div><button className="btn btn-danger" onClick={() => signOut(auth)}>
+           Sign Out
+           
+         </button>
+         <Link className="mx-2 p-2" to='/cart'>
+                <i class='fas fa-shopping-cart'></i>
+              </Link>
+          </div>
+           
+            
           ) : (
             <>
               <Link to="/login" className="btn btn-primary">
@@ -48,6 +55,9 @@ const Nav = () => {
               <Link to="/register" className="btn btn-success">
                 {" "}
                 Join now{" "}
+              </Link>
+              <Link className="mx-2" to='/cart'>
+                <i class='fas fa-shopping-cart'></i>
               </Link>
             </>
           )}
